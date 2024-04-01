@@ -16,7 +16,7 @@ int _atoi(char *s)
 	{
 		if (s[i] == '-')
 		{
-			negative = 1;
+			negative++;
 		}
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
@@ -28,12 +28,11 @@ int _atoi(char *s)
 			{
 				return value;
 			}
-			negative = 0;
 		}
 		i++;
 	}
 
-	if (negative == 1)
+	if (negative % 2 == 1)
 	{
 		return -value;
 	}
