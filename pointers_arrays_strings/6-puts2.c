@@ -21,7 +21,7 @@ int _strlen(char *s)
 }
 
 /**
- * rev_string - function that manipulate the string
+ * puts2 - function that manipulate the string
  * @str: string we want to manipulate
  *
  */
