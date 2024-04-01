@@ -6,22 +6,17 @@
  * Return: integer with the number of char
  */
 
-int _strlen(char *s)
-{
-int count = 0;
+void print_rev(char *s)
+
+int x = 0;
 
 while (*s != '\0')
 {
-count++;
+x++;
 s++;
 }
 
-return (count);
-}
-
-void print_rev(char *s)
-
-int x = _strlen( *s);
+x = _strlen( *s);
 
 while (x >= 0)
 {
