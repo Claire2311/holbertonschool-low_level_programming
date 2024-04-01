@@ -1,13 +1,4 @@
-//
-//  4-print_rev.h
-//  
-//
-//  Created by Claire Girard on 01/04/2024.
-//
 
-#ifndef __print_rev_h
-#define __print_rev_h
+int _strlen(char *s);
 
-#include <stdio.h>
-
-#endif /* __print_rev_h */
+void print_rev(char *s);
