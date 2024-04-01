@@ -4,11 +4,15 @@
  *
  * Return: integer with the number of char
  */
-#include <string.h>
 
 int _strlen(char *s)
 {
-int fullsize;
-fullsize = strlen(s);
-return fullsize;
+int count = 0;
+
+while (*s != '\0') {
+count++;
+s++
+}
+    
+return count;
 }
