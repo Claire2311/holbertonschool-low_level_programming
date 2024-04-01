@@ -4,6 +4,8 @@
  *
  * Return: integer with the number of char
  */
+#include <string.h>
+
 int _strlen(char *s)
 {
 int fullsize;
