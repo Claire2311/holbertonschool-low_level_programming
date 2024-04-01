@@ -1,3 +1,4 @@
+# include "_putchar.h"
 /**
  * print_rev - function that returns the length of a string
  * @s: string we want to reverse
@@ -20,7 +21,7 @@ return (count);
 
 void print_rev(char *s)
 
-x = _strlen( *s);
+int x = _strlen( *s);
 
 while (x >= 0)
 {
