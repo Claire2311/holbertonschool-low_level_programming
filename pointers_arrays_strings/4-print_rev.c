@@ -28,14 +28,11 @@ int _strlen(char *s)
  */
 void print_rev(char *s)
 {
-    int x = _strlen(s);
+    int x = _strlen(s) - 1;
 
     while (x >= 0)
     {
-        if (s[x] != '\0')
-        {
-            _putchar(s[x]);
-        }
+        _putchar(s[x]);
         x--;
     }
 
