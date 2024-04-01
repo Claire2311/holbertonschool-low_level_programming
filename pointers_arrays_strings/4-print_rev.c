@@ -1,8 +1,8 @@
 #include "_putchar.h"
 
 /**
- * print_rev - function that returns the length of a string
- * @s: string we want to reverse
+ * _strlen - function that returns the length of a string
+ * @s: string we want the length
  *
  * Return: integer with the number of char
  */
@@ -20,6 +20,12 @@ int _strlen(char *s)
     return (count);
 }
 
+/**
+ * print_rev - function that returns the length of a string
+ * @s: string we want to reverse
+ *
+ * Return: integer with the number of char
+ */
 void print_rev(char *s)
 {
     int x = _strlen(s);
@@ -29,4 +35,6 @@ void print_rev(char *s)
         _putchar(s[x]);
         x--;
     }
+
+    return;
 }
