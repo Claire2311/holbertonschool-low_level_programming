@@ -21,11 +21,11 @@ int _atoi(char *s)
 		}
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
-			if ((INT_MAX - (value * 10)) > (s[i] - '0'))
+			if ((INT_MAX - (value * 10)) < (s[i] - '0'))
 			{
-
-				value = (value * 10) + (s[i] - '0');
+				return INT_MAX;
 			}
+			value = (value * 10) + (s[i] - '0');
 		}
 		else
 		{
