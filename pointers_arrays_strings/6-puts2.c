@@ -21,8 +21,8 @@ int _strlen(char *s)
 }
 
 /**
- * rev_string - function that reverse the string
- * @s: string we want to reverse
+ * rev_string - function that manipulate the string
+ * @str: string we want to manipulate
  *
  */
 void puts2(char *str)
