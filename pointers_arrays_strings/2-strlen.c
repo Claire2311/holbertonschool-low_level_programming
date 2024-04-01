@@ -4,7 +4,7 @@
  *
  * Return: integer with the number of char
  */
-int _strlen(char *s);
+int _strlen(char *s)
 {
 return strlen(s);
 }
