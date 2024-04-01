@@ -21,11 +21,20 @@ int _atoi(char *s)
 		}
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
-			if ((INT_MAX - (value * 10)) < (s[i] - '0'))
+			if (value >= 0)
 			{
-				return INT_MAX;
+				value = (value * 10) + (s[i] - '0');
 			}
-			value = (value * 10) + (s[i] - '0');
+			else
+			{
+				value = (value * 10) - (s[i] - '0');
+			}
+
+			if (negative % 2 == 1)
+			{
+				value = -value;
+				negative = 0;
+			}
 		}
 		else
 		{
@@ -37,12 +46,5 @@ int _atoi(char *s)
 		i++;
 	}
 
-	if (negative % 2 == 1)
-	{
-		if ((value * -1) > INT_MIN)
-		{
-			return -value;
-		}
-	}
 	return value;
 }
