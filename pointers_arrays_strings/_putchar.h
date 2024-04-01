@@ -1,6 +1,6 @@
 #ifndef _putchar_h
 #define _putchar_h
 
-#include <stdio.h>
+int _putchar(char c);
 
 #endif /* _putchar_h */
