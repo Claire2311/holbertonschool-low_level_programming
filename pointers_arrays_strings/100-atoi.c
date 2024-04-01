@@ -40,11 +40,11 @@ int _atoi(char *s)
 		{
 			if (value > 0)
 			{
-				return value;
+				return (value);
 			}
 		}
 		i++;
 	}
 
-	return value;
+	return (value);
 }
