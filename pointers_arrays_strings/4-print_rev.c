@@ -32,9 +32,14 @@ void print_rev(char *s)
 
     while (x >= 0)
     {
-        _putchar(s[x]);
+        if (s[x] != '\0')
+        {
+            _putchar(s[x]);
+        }
         x--;
     }
+
+    _putchar('\n');
 
     return;
 }
