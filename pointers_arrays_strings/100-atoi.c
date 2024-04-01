@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 
 /**
  * _atoi - function that convert a string to int
@@ -20,7 +21,11 @@ int _atoi(char *s)
 		}
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
-			value = (value * 10) + (s[i] - '0');
+			if ((INT_MAX - (value * 10)) > (s[i] - '0'))
+			{
+
+				value = (value * 10) + (s[i] - '0');
+			}
 		}
 		else
 		{
@@ -34,7 +39,10 @@ int _atoi(char *s)
 
 	if (negative % 2 == 1)
 	{
-		return -value;
+		if ((value * -1) > INT_MIN)
+		{
+			return -value;
+		}
 	}
 	return value;
 }
