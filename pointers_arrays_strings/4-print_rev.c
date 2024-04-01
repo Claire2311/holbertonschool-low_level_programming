@@ -9,15 +9,15 @@
 
 int _strlen(char *s)
 {
-    int count = 0;
+ int count = 0;
 
-    while (*s != '\0')
-    {
-        count++;
-        s++;
-    }
+ while (*s != '\0')
+ {
+		count++;
+		s++;
+ }
 
-    return (count);
+ return (count);
 }
 
 /**
@@ -28,15 +28,15 @@ int _strlen(char *s)
  */
 void print_rev(char *s)
 {
-    int x = _strlen(s) - 1;
+ int x = _strlen(s) - 1;
 
-    while (x >= 0)
-    {
-        _putchar(s[x]);
-        x--;
-    }
+ while (x >= 0)
+ {
+		_putchar(s[x]);
+		x--;
+ }
 
-    _putchar('\n');
+ _putchar('\n');
 
-    return;
+ return;
 }
