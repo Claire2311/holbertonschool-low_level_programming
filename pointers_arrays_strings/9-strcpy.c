@@ -24,6 +24,7 @@ int _strlen(char *s)
  * @dest: char array destination
  * @src: char array source
  *
+ * Return: char the pointer to the dest
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -33,6 +34,11 @@ char *_strcpy(char *dest, char *src)
 	for (i = 0; i < size; i++)
 	{
 		dest[i] = src[i];
+	}
+
+	if (dest[i] != '\0')
+	{
+		dest[i] = '\0';
 	}
 
 	return dest;
