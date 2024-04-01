@@ -1,5 +1,4 @@
 #include "_putchar.h"
-#include <stdio.h>
 
 /**
  * _strlen - function that returns the length of a string
@@ -36,7 +35,6 @@ void rev_string(char *s)
 
 	while (i < j)
 	{
-		printf("%s\n", s);
 		temp = s[i];
 		s[i] = s[j];
 		s[j] = temp;
